@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Fan badge can be purchased",
+    "viewport": "desktop",
+    "covers": ["fan badge", "badge purchase interaction"],
+    "description": "Verifies the digital fan badge is visible and its purchase action opens the concept checkout.",
+    "steps": ["Open the site", "Scroll to Fan Badge", "Select Purchase Fan Badge"],
+    "expected": "The fan badge checkout opens and explains that no real payment is processed."
+  },
+  {
+    "name": "Children's care donation flow opens",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": ["children's care donation", "donation amount selection", "donation checkout modal"],
+    "description": "Verifies visitors can select the $100 minimum donation and open the concept donation checkout without a charge.",
+    "steps": ["Scroll to the Children's Care donation section", "Select $100", "Select Donate $100"],
+    "expected": "The donation modal opens showing the selected $100 amount and states that payment processing is not connected."
+  },
+  {
+    "name": "Accommodation remains actionable",
+    "viewport": "desktop",
+    "covers": ["accommodation section", "accommodation CTA"],
+    "description": "Verifies accommodation information and its request action remain available.",
+    "steps": ["Scroll to Accommodation", "Review the accommodation options", "Select Request Accommodation Info"],
+    "expected": "Three accommodation options are visible and the request button takes the visitor to the RSVP interest form."
+  },
+  {
+    "name": "Get tickets from management",
+    "viewport": "desktop",
+    "covers": ["management ticket request", "ticket request form", "management contact"],
+    "description": "Verifies the hero ticket action opens a management ticket request flow instead of an on-site ticket shop.",
+    "steps": ["Open the site", "Select Get Tickets from Management", "Review the request fields", "Select Contact Management"],
+    "expected": "A management ticket request modal opens with name, email, preferred show, and ticket request fields, plus a contact-management action."
+  },
+  {
+    "name": "RSVP interest works on mobile",
+    "viewport": "mobile",
+    "covers": ["RSVP interest form", "mobile form behavior"],
+    "description": "Verifies the reserve-interest form remains usable on a phone-sized screen.",
+    "steps": ["Scroll to Reserve Interest", "Enter name, email, and city", "Submit Reserve Interest"],
+    "expected": "A success message confirms the interest was recorded for the demo experience."
+  }
+]
